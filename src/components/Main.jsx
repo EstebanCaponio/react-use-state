@@ -6,9 +6,7 @@ function Main() {
     return (
         <>
             <main>
-                <div>
-                    <Btn languages={languages} />
-                </div>
+                <Btn languages={languages} />
             </main>
         </>
     )

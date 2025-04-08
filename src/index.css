@@ -16,6 +16,7 @@ header {
     display: flex;
     gap: 20px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .btn {
@@ -30,4 +31,32 @@ header {
 .btn:hover {
     cursor: pointer;
     opacity: 0.8;
+}
+
+.btn:active {
+    background-color: #ffc107;
+    color: black;
+}
+
+.container-info {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 25px;
 }

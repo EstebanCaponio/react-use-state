@@ -1,12 +1,12 @@
-function Card() {
+function Card(title) {
 
-    // const [title, settitle] = useState(null);
+    const language = title.title;
 
     return (
-        <div>ciao</div>
-        // <div>
-        //     {title === language.id && (<p>{language.description}</p>)}
-        // </div>
+        <div className="container-info">
+            {language ? <h3>{language.title}</h3> : <h4>nessun linguaggio selezionato</h4>}
+            {language ? <p>{language.description}</p> : null}
+        </div>
     )
 }
 

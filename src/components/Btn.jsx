@@ -1,6 +1,6 @@
 function Btn({ languages }) {
     return (
-        languages.map((language) => <button>{language.title}</button>)
+        languages.map((language) => <button key={language.id}>{language.title}</button>)
 
     )
 }

@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #f8f9fa;
+    font-size: 30px;
+}
+
+.container {
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 17px;
+    border-radius: 15px;
+    font-size: 20px;
+    border: none;
+    background-color: #0d6efd;
+    color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

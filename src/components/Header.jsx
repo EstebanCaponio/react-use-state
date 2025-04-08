@@ -1,9 +1,9 @@
 function Header() {
 
     return (
-        <div>
+        <header>
             <h1>Learn Web development</h1>
-        </div>
+        </header>
     )
 }
 

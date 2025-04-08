@@ -4,6 +4,7 @@ import Card from "./Card";
 function Btn({ languages }) {
 
     const [title, settitle] = useState(null);
+    const [activeId, setActiveId] = useState(null);
 
     return (
         <>
@@ -13,8 +14,12 @@ function Btn({ languages }) {
 
                         <button
                             key={language.id}
-                            className="btn"
-                            onClick={() => settitle(language)}
+                            className={`btn ${activeId === language.id ? 'active' : ''}`}
+                            // onClick={() => settitle(language)}
+                            onClick={() => {
+                                settitle(language);
+                                setActiveId(language.id);
+                            }}
                         >
                             {language.title}
                         </button >)
